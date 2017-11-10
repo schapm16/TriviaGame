@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang = "en-us" charset = "UTF-8">
+        
+        <!--Only required if I end up using responsive design-->
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        
+        <link rel="stylesheet" href="assets/css/reset.css" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        
+        <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+        </script>
+        
+        <!--Only needed if I store questions in separate JS file-->
+        <script type="text/javascript" src="assets/javascript/questions.js"></script>
+        
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        
+    </head>
+    
+    <body>
+      
+      <div id = "gameBoard">
+        <div id = "gameClock"></div>
+        
+        <div id = "question"></div>
+        
+        <div id = "answerOptions">
+          <div data-option = "1" ></div>
+          <div data-option = "2" ></div>
+          <div data-option = "3" ></div>
+          <div data-option = "4" ></div>
+        </div>
+        
+        <div id = message></div>
+      </div>
+      
+      
+      <div id = "startScreen">
+        <h1>Welcome to Christmas Movie Trivia!</h1>
+        <button id = "start" type = "button">Play!</button>
+      </div>
+      
+      <div id = "endScreen">
+        
+        <h1>Results: </h1>
+        
+        <div id = "numRight"></div>
+        <div id = "numWrong"></div>
+        <button id = "reset" type = "button">Play Again</button>
+      </div>
+      
+    </body>
+</html>

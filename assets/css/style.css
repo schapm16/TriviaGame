@@ -1,0 +1,133 @@
+html, body {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body {
+    background-image: url("../images/christmas.jpg");
+    background-size: cover;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+#gameBoard, #endScreen, #startScreen {
+    
+    box-sizing: border-box;
+    height: 80vh;
+    width: 50%;
+    margin: 10vh auto;
+    padding: 5%;
+    
+    background-color: white;
+    border: 5px solid red;
+    border-radius: 8px;
+    
+}
+
+/*-------------------------------------------------*/
+
+#gameBoard {
+    display: none;
+    
+    text-align: center;
+}
+
+#gameBoard #gameClock {
+    font-size: 2em;
+}
+
+#gameBoard #question {
+    font-size: 1.25em;
+    line-height: 115%;
+    margin-top: 40px;
+}
+
+#gameBoard #answerOptions div {
+    font-size: 1.25em;
+    margin-top: 20px;
+}
+
+#gameBoard #answerOptions div:hover {
+    transition: 1s;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    
+    cursor: pointer;
+}
+
+#gameBoard #message {
+    font-size: 2em;
+    margin-top: 40px;
+}
+/*---------------------------------------------------*/
+#startScreen {
+    display: block;
+    text-align: center;
+}
+
+#startScreen h1 {
+    font-size: 2em;
+    max-height: 50%;
+}
+
+#startScreen #start {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 4px;
+    min-height: 10%;
+    min-width: 15%;
+    
+    margin-top: 40px;
+}
+
+#startScreen #start:hover {
+    transition: 1s;
+    background-color: green;
+    color: white;
+    
+}
+
+/*--------------------------------------------------------*/
+
+
+#endScreen {
+    display: none;
+ 
+}
+
+#endScreen h1 {
+    font-size: 2em;
+    max-height: 50%;
+}
+
+#endScreen div {
+    font-size: 1.25em;
+    margin-top: 40px;
+}
+
+#endScreen #reset {
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 4px;
+    min-height: 10%;
+    min-width: 15%;
+    
+    margin-top: 40px;
+    
+    color: white;
+}
+
+#endScreen #reset:hover {
+    transition: 1s;
+    background-color: white;
+    color: black;
+}
+
